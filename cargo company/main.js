@@ -80,8 +80,7 @@ function toString(item) {
 
 function getData() {
     let data = document.getElementById("data").value;
-    const regExp = /('[0-9]{1,5}KG[A-z À-ú0-9]{1,50}', 'gim')/;
-    debugger;
+    const regExp = /(\d+(?:[\.,]\d+)?)\s*kg\s*(.*)/gi;
     let stringArray = data.match(regExp);
     for (let i = 0; i < stringArray.length; i++) {
         let index = stringArray[i].toLowerCase().indexOf("k");
