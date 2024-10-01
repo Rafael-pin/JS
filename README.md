@@ -1,5 +1,3 @@
-# JS
-Java Script codes
 The challange was to develop a software to a cargo company.
 Should have only one input and one output, both as text areas.
 
